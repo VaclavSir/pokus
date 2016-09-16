@@ -1,23 +1,37 @@
-HOST: http://www.google.com/
+FORMAT: 1A
 
---- pokus ---
+# Playground
 
----
-Blah blah __blah__ blah blah
----
+## Post [/post/{id}]
 
-GET /something
-< 404
-{"something not found"}
+### Detail view [GET]
 
-GET /something-else
-< 404
-{"Guess what. Something else also not found."}
++ Response 200 (application/json)
 
-GET /hellos/world
-< 200
-{"Hello World!"}
+    - Attributes (Post)
 
-GET /foo
-< 200
-{"bar"}
+## Posts [/posts]
+
+### List view [GET]
+
++ Response 200 (application/json)
+
+    - Attributes (array)
+        - (Post)
+        - (Post)
+            - id: 2
+            - title: Different title
+
+# Data Structures
+
+## Post (object)
+
+- id: 1 (number)
+- title: Default title
+- content: Lorem ipsum bla bla bla.
+- author (User)
+
+## User (object)
+
+- id: 10 (number)
+- name: John Doe
