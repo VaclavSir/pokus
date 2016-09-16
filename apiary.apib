@@ -6,7 +6,7 @@ FORMAT: 1A
 
 ### Detail view [GET]
 
-+ Response 200 (application/json)
+- Response 200 (application/json)
 
     - Attributes (Post)
 
@@ -14,24 +14,24 @@ FORMAT: 1A
 
 ### List view [GET]
 
-+ Response 200 (application/json)
+- Response 200 (application/json)
 
     - Attributes (array)
         - (Post)
         - (Post)
             - id: 2
-            - title: Different title
+            - title: `Different title`
 
 # Data Structures
 
 ## Post (object)
 
 - id: 1 (number)
-- title: Default title
-- content: Lorem ipsum bla bla bla.
+- title: `Default title`
+- content: `Lorem ipsum bla bla bla.`
 - author (User)
 
 ## User (object)
 
 - id: 10 (number)
-- name: John Doe
+- name: `John Doe`
