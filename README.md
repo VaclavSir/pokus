@@ -1,8 +1,6 @@
 pokus
 =====
 
-<div class="alert tip">
-  Blah blah blah blah blah.
-</div>
+>  Blah blah blah blah blah.
 
 Temporary repository for testing purposes.
